@@ -1,0 +1,101 @@
+body{
+    background: #DBE4C6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.button{
+    margin: 0 20px 10px 20px;
+    padding: 5px 20px 5px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #94AF9F;
+}
+a{
+    color: black;
+}
+.wrapper{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+}
+header{
+    position: sticky;
+    border: 2px solid black;
+    padding: 20px 20px 20px 20px;
+    height: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #BBD6B8;
+    overflow:visible;
+    margin: 10px 10px 10px 10px;
+}
+img{
+    height: 10vh;
+}
+section{
+    border: 2px solid black;
+    margin: 1vh;
+    border-radius: 10px;
+    background-color: #94AF9F
+}
+#shoeAdd{
+    float:  right;
+    border: 2px solid black;
+    padding: 10px 10px 10px 10px;
+    display: inline;
+    border-radius: 5px;
+    background-color: #BBD6B8;
+}
+input{
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #efefef;
+}
+
+#closeShoeWindow{
+    background-color: red;
+    color: white;
+}
+h2{
+    font-family: sans-serif;
+}
+h3{
+    font-family: sans-serif;
+}
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.shoeInput{
+    border: 2px solid black;
+    border-radius: 3px;
+}
+footer{
+    margin-top: auto;
+    background-color: #94AF9F;
+    text-align: left;
+    padding: 5px;
+    position: fixed;
+    flex-shrink: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main{
+    flex: 1;
+    margin: 10px;
+}
+#sidebar{
+    margin-left: auto; 
+    height: 500px; 
+    border: 3px solid black; 
+    border-radius: 5px; 
+    background-color: #BBD6B8;
+}
+#openSidebar{
+    margin-left: auto;
+}
