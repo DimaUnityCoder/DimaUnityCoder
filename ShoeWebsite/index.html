@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <header>
+            <h2>The look-a-like finder</h2>
+            <p  class="text">The website where you can find shoes that resemble 
+                shoes from popular brands enough to have similar look, but not enough to be considered a replica.</p>
+            <div class="wrapper" style="justify-content: center;">
+                <button class="button" id="forcesButton">
+                    <h4>Air Forces</h4>
+                </button>
+                <button class="button" id="jordansButton">
+                    <h4>Jordans</h4>
+                </button>
+                <button class="button" id="vansButton">
+                    <h4>Vans</h4>
+                </button>
+                <button class="button" id="dunksButton">
+                    <h4>Dunks</h4>
+                </button>
+                <button class="button" id="everythingButton">
+                    <h4>Everything</h4>
+                </button>
+                
+                
+                
+            </div>
+            
+        </header>
+        <main>
+            <h2>Results:</h2> <br>
+            <div style="display: flex; align-content: flex-end;">
+                
+                <div class="wrapper" id="prodScreen">
+                    
+                    
+                </div>
+                <div id="sidebar">
+                    <h2 style="margin: 10px 10px 10px 20px;">The sidebar</h2>
+                    <div style="margin: 10px;">
+                        <div>
+                            <button id="openShoeAdder" class="button" style="background-color: #BBD6B8">
+                                <h4>Add new shoe</h4>
+                            </button>
+                        </div>
+                        <div id="shoeAdd" style="display: none;">
+                            <h3>Here you can add a new shoe</h3>
+                            <input type="text" class = "shoeInput" id = "shoeLink"placeholder="Enter link to the shoe here..." ><br>
+                            <input type="text" class = "shoeInput" id = "shoeName"placeholder="Enter the name of the shoe here..." ><br>
+                            <input type="text" class = "shoeInput" id = "shoePic"placeholder="Enter link to the picture of the shoe here..." ><br>
+                            <select name="types" id="shoeType" style="border: solid 2px black; margin-bottom: 10px;">
+                                <option value="0">Choose which shoe it resembles...</option>
+                                <option value="1">Air Forces</option>
+                                <option value="2">Jordans</option>
+                                <option value="3">Vans</option>
+                                <option value="4">Dunks</option>
+                            </select>
+            
+                            
+            
+            
+                            <div style="display: flex; align-content: space-between;">
+                                <div>
+                                    <button class="button" id="submitNewShoe">
+                                        <p>Submit</p>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button class="button" id="closeShoeAdder">
+                                        <p>Close</p>
+                                    </button>
+                                </div>
+                            </div>           
+                        </div>
+                    </div>
+                    
+                        
+                </div>
+            </div>
+            </div>
+            
+        </main>
+
+        
+        
+          
+
+        
+        <footer>
+            <div id="footerDiv">
+                My gmail: something@gmail.com
+            </div>
+        </footer>
+        <script src="object_script.js"></script>
+        
+    </body>
+</html>
