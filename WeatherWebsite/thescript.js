@@ -6,6 +6,7 @@ var temp = document.querySelector('#temp');
 var wind = document.querySelector('#wind');
 var sunrise = document.querySelector('#sunrise');
 var sunset = document.querySelector('#sunset');
+var localtime = document.querySelector('#localtime')
 
 var picture = document.getElementById("image");
 
@@ -13,7 +14,9 @@ var picture = document.getElementById("image");
 apik = "3045dd712ffe6e702e3245525ac7fa38"
 
 //kelvin to celcious. 1 Kelvin is equal to -272.15 Celsius.
-
+function getCurrentTimestamp () {
+    return Date.now() 
+  }
 
 
 function convertion(val) {
@@ -21,8 +24,8 @@ function convertion(val) {
 }
 
 //converts unix time to time because openweather decided to use unix for some reason
-function unixConv(val) {
-    var date = new Date(val * 1000);
+function unixConv(val, timeadd) {
+    var date = new Date((val-7200+timeadd) * 1000);
     var hour = '0' + date.getHours();
     var min = '0' + date.getMinutes();
 
@@ -55,6 +58,8 @@ function getAndSetWeatherData(){
         var wndspd = data['wind']['speed']
         var sunriseval = data['sys']['sunrise']
         var sunsetval = data['sys']['sunset']
+        var timezone = data['timezone']
+        var date_ = data['dt']
         var weathericon = data['weather']['0']['icon'].slice(-3)
          //Now with the help of innerHTML you have to make arrangements to display all the information in the webpage.
         console.log(weathericon)
@@ -62,8 +67,9 @@ function getAndSetWeatherData(){
         temp.innerHTML = `Temperature: <span>${convertion(tempature)} C</span>`
         description.innerHTML = `Sky Conditions: <span>${descrip}<span>`
         wind.innerHTML = `Wind Speed: <span>${wndspd} km/h<span>`
-        sunrise.innerHTML = `Sunrise at: <span>${unixConv(sunriseval)}<span>`
-        sunset.innerHTML = `Sunset at: <span>${unixConv(sunsetval)}<span>`
+        sunrise.innerHTML = `Sunrise at: <span>${unixConv(sunriseval,timezone)}<span>`
+        sunset.innerHTML = `Sunset at: <span>${unixConv(sunsetval,timezone)}<span>`
+        localtime.innerHTML = `Local time: <span>${unixConv(date_,timezone)}</span>`
         document.getElementById("image").src = `https://openweathermap.org/img/wn/${weathericon}@2x.png`;
         
         //             https://openweathermap.org/img/wn/${weathericon}@2x.png
