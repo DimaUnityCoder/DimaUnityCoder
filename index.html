@@ -13,10 +13,26 @@
                 display: flex;
                 justify-content: center;
             }
+            h2{
+                text-align: center;
+                min-width: 100%;
+                top: 50%;
+
+            }
+            .everything{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -moz-transform: translateX(-50%) translateY(-50%);
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+            }
+            
         </style>
     </head>
     <body>
-        <h2>Welcome to my project navigator, here you can find all the projects I created during my Praktikum</h2>
+        <div class="everything">
+            <h2>Welcome to my project navigator, here you can find all the projects I created during my Praktikum</h2>
         <div id="wrapper">
 
             <div class="_button">
@@ -26,5 +42,7 @@
                 <a href="/WeatherWebsite/index.html">Project 2</a>
             </div>
         </div>
+        </div>
+        
     </body>
 </html>
