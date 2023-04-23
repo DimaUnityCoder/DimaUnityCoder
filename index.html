@@ -2,16 +2,29 @@
 <html>
     <head>
         <style>
-            
-            a{
-                padding: 10px 20px 10px 20px;
+            ._button {
+                width: 100px;
+                margin: 20px;
+                padding: 10px 20px;
                 border: solid black 3px;
+                text-align: center;
+            }
+            #wrapper {
+                display: flex;
+                justify-content: center;
             }
         </style>
     </head>
     <body>
-        <h2>Welcome to my project navigator, here you can find all the prjects i created on my Praktikum</h2>
-        <a href="/ShoeWebsite/index.html">Project 1</a>
-        <a href="/WeatherWebsite/index.html">Project 2</a>
+        <h2>Welcome to my project navigator, here you can find all the projects I created during my Praktikum</h2>
+        <div id="wrapper">
+
+            <div class="_button">
+                <a href="/ShoeWebsite/index.html">Project 1</a>
+            </div>
+            <div class="_button">
+                <a href="/WeatherWebsite/index.html">Project 2</a>
+            </div>
+        </div>
     </body>
 </html>

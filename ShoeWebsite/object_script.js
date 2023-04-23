@@ -1,13 +1,32 @@
 //creating temporary product storages
-const productId = [];
+const productId = [0,1,2,3];
 const productPicLink = [
+    'https://cdn.skatedeluxe.com/thumb/_Th3sbIc8BfW9Xb74zjebirYPAg=/fit-in/600x700/filters:fill(white):brightness(-4)/product/159000-0-Lakai-TelfordLowSuede.jpg',
+    'https://images.asics.com/is/image/asics/1191A163_100_SR_RT_GLB?$sfcc-product$',
+    'https://cdn.shopify.com/s/files/1/0606/3201/products/image_2ba53e6d-12bf-4bbf-876a-9cc645317306.jpg?v=1648680677',
+    'https://santoloco.com/media/image/product/47221/lg/cariuma-catiba-pro-skate-shoe-ivory-black-suede_7~4.jpg'
     
 ];
 const productLink = [
-    
+    'https://www.skatedeluxe.com/de/lakai-telford-low-suede-schuh-navy-white_p159000',
+    'https://www.asics.com/de/de-de/japan-s/p/1191A163-100.html',
+    'https://holisticskateshop.com/collections/lakai/products/lakai-telford-fog-suede',
+    'https://www.alleyoop.de/brands/cariuma/cariuma-catiba-pro-all-black-gum-ivory-men.html'
 ];
-const productName = [];
-const productType = [];
+const productName = [
+    'Lakai Telford Low',
+    'Asics Japan',
+    'Lakai Telford High',
+    'Cariuma Catiba Pro'
+];
+const productType = [
+    4,
+    1,
+    2,
+    3
+
+
+];
 
 //getting the buttons from html
 
